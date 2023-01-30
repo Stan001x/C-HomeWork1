@@ -8,6 +8,6 @@ while (Math.Abs(a) < 100)
 {Console.WriteLine("Введите число содержащее 3 и более разрядов");
 a = Convert.ToInt32(Console.ReadLine());};
 
-while (a / 1000 > 0)
+while (Math.Abs(a / 1000) > 0)
       a = a / 10;
-Console.WriteLine(a % 10);
+Console.WriteLine(Math.Abs(a % 10));
